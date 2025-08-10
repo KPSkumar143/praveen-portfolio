@@ -1,83 +1,217 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>PK DARK'S Portfolio</title>
-  <link rel="icon" href="public/favicon.png">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PK DARK — Portfolio</title>
+  <link rel="icon" href="public/icons/favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="container header">
-    <div class="brand">
-      <div class="logo-badge">PK</div>
-      <div>
-        <div class="site-title">PK DARK'S Portfolio</div>
-        <div class="small">Praveen Kumar — B.Arch 2nd Year</div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo-badge">PK</div>
+        <div>
+          <div class="site-title">PK DARK'S Portfolio</div>
+          <div class="site-sub">Praveen Kumar — B.Arch 2nd Year</div>
+        </div>
       </div>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="theme-btn" title="Toggle light/dark">🌓</button>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">☰</button>
     </div>
 
-    <nav>
-      <span id="menuToggle" style="display:none;cursor:pointer;margin-right:10px;">☰</span>
-      <div class="nav" id="navLinks">
-        <a href="index.html">Home</a>
-        <a href="pages/about_story.html">About</a>
-        <a href="pages/skills.html">Skills</a>
-        <a href="pages/projects.html">Projects</a>
-        <a href="pages/contact_connect.html">Contact</a>
-      </div>
-    </nav>
+    <!-- mobile nav -->
+    <div id="mobileNav" class="mobile-nav hidden">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="mobileThemeToggle" class="theme-btn">🌓</button>
+    </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <div class="hero-inner panel">
-        <h1 class="hero-title neon-glow">Hi, I'm <span class="kv">PK DARK</span></h1>
-        <p class="hero-sub">I’m Praveen Kumar — a creative B.Arch student who blends architecture, AI, and front-end design to build meaningful projects that look and work great.</p>
-
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="pages/projects.html">View Projects</a>
-          <a class="btn btn-neon" href="pages/contact_connect.html">Contact Me</a>
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero section">
+      <div class="container hero-inner">
+        <h1 class="hero-title neon">Hi, I'm <span class="accent">PK DARK</span></h1>
+        <p class="hero-lead">I’m Praveen Kumar — a creative B.Arch student blending architecture, AI and front-end design to build meaningful projects.</p>
+        <div class="cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
         </div>
       </div>
     </section>
 
-    <section style="margin-top:18px;">
-      <div class="grid">
-        <div class="panel card">
-          <img src="public/assets/project1.jpg" alt="Project 1">
-          <div class="card-body">
-            <h3>Personalized Movie Recommender</h3>
-            <p class="small">AI-driven system for personalized movie recommendations (Marketing project).</p>
-          </div>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container panel">
+        <h2 class="section-title neon">About</h2>
+        <p>I’m a B.Arch second-year student passionate about architecture, 3D visualization, and applying AI to creative problems. I focus on designing spaces and building prototypes that communicate ideas clearly.</p>
+        <div class="details-grid">
+          <div><strong>Role</strong><div class="small">B.Arch 2nd Year Student</div></div>
+          <div><strong>Location</strong><div class="small">Tagore Institute of Engineering and Technology</div></div>
+          <div><strong>Email</strong><div class="small"><a href="mailto:praveenkumar11242006@gmail.com">praveenkumar11242006@gmail.com</a></div></div>
+          <div><strong>Phone</strong><div class="small">86670 91840</div></div>
         </div>
-        <div class="panel card">
-          <img src="public/assets/project2.jpg" alt="Project 2">
-          <div class="card-body">
-            <h3>Face Recognition using CNN</h3>
-            <p class="small">Convolutional Neural Network for face recognition tasks.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container panel">
+        <h2 class="section-title neon">Skills</h2>
+        <p class="small">A mix of architecture, visualization and dev skills.</p>
+
+        <div class="skill-list">
+          <div class="skill">
+            <div class="skill-head"><span>Architectural Design</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-fill fill-90"></div></div>
           </div>
-        </div>
-        <div class="panel card">
-          <img src="public/assets/project3.jpg" alt="Project 3">
-          <div class="card-body">
-            <h3>XOR with DNN</h3>
-            <p class="small">Deep neural network experiments solving XOR.</p>
+
+          <div class="skill">
+            <div class="skill-head"><span>Adobe Creative Suite</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill fill-85"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head"><span>3D Visualization & Rendering</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-fill fill-80"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head"><span>HTML / CSS / JS</span><span>75%</span></div>
+            <div class="skill-bar"><div class="skill-fill fill-75"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head"><span>Python (AI/ML)</span><span>70%</span></div>
+            <div class="skill-bar"><div class="skill-fill fill-70"></div></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section style="margin-top:28px;" class="panel">
-      <h3 class="kv">Contact</h3>
-      <p class="small">Email: <a class="kv" href="mailto:praveenkumar11242006@gmail.com">praveenkumar11242006@gmail.com</a> • Phone: <span class="kv">86670 91840</span></p>
-      <p style="margin-top:8px;">Connect: <a href="https://www.linkedin.com/in/praveen-kumar-034274309/" target="_blank" class="kv">LinkedIn</a> • <a href="https://github.com/KPSkumar143" target="_blank" class="kv">GitHub</a></p>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title neon">Projects</h2>
+        <p class="small">Click a project to preview details.</p>
+
+        <div class="grid projects-grid">
+          <!-- card 1 -->
+          <article class="card panel">
+            <img src="public/assets/project1.jpg" alt="Project 1" loading="lazy">
+            <div class="card-body">
+              <h3>Personalized Movie Recommender</h3>
+              <p class="small">AI-driven system to recommend movies based on user preferences.</p>
+              <div class="card-actions">
+                <button class="btn btn-outline" data-open="modal-1">Preview</button>
+                <a class="small" href="#">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- card 2 -->
+          <article class="card panel">
+            <img src="public/assets/project2.jpg" alt="Project 2" loading="lazy">
+            <div class="card-body">
+              <h3>Face Recognition using CNN</h3>
+              <p class="small">CNN model used for face recognition tasks.</p>
+              <div class="card-actions">
+                <button class="btn btn-outline" data-open="modal-2">Preview</button>
+                <a class="small" href="#">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- card 3 -->
+          <article class="card panel">
+            <img src="public/assets/project3.jpg" alt="Project 3" loading="lazy">
+            <div class="card-body">
+              <h3>XOR with DNN</h3>
+              <p class="small">DNN experiments solving the XOR problem.</p>
+              <div class="card-actions">
+                <button class="btn btn-outline" data-open="modal-3">Preview</button>
+                <a class="small" href="#">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- card 4 -->
+          <article class="card panel">
+            <img src="public/assets/project4.jpg" alt="Project 4" loading="lazy">
+            <div class="card-body">
+              <h3>Text-to-Speech (Gradio)</h3>
+              <p class="small">TTS demo using Gradio for easy testing.</p>
+              <div class="card-actions">
+                <button class="btn btn-outline" data-open="modal-4">Preview</button>
+                <a class="small" href="#">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container panel contact-panel">
+        <h2 class="section-title neon">Contact</h2>
+        <p class="small">Email: <a href="mailto:praveenkumar11242006@gmail.com">praveenkumar11242006@gmail.com</a> • Phone: 86670 91840</p>
+        <div class="contact-grid">
+          <form id="contactForm" action="https://formspree.io/f/mzzvrpkp" method="POST" class="contact-form">
+            <label><input name="name" placeholder="Your name" required></label>
+            <label><input name="email" placeholder="Your email" type="email" required></label>
+            <label><textarea name="message" placeholder="Your message" rows="5" required></textarea></label>
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Send Message</button>
+              <span id="formStatus" class="small"></span>
+            </div>
+          </form>
+
+          <div class="contact-meta">
+            <h3 class="kv">Get in touch</h3>
+            <p class="small">LinkedIn: <a href="https://www.linkedin.com/in/praveen-kumar-034274309/" target="_blank">praveen-kumar</a></p>
+            <p class="small">GitHub: <a href="https://github.com/KPSkumar143" target="_blank">KPSkumar143</a></p>
+            <p class="small">I usually reply within 2–3 business days.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer class="footer">
-      © 2025 PK DARK — Praveen Kumar. Built with care.
+      <div class="container">
+        <small>© 2025 PK DARK — Praveen Kumar. Built with care.</small>
+      </div>
     </footer>
   </main>
+
+  <!-- Modals -->
+  <div id="modal-1" class="modal-back" style="display:none">
+    <div class="modal panel"><button class="modal-close">Close</button><img src="public/assets/project1.jpg" alt=""><h3>Personalized Movie Recommender</h3><p class="small">Short description and tech stack: Python, collaborative filtering, Flask demo.</p></div>
+  </div>
+  <div id="modal-2" class="modal-back" style="display:none">
+    <div class="modal panel"><button class="modal-close">Close</button><img src="public/assets/project2.jpg" alt=""><h3>Face Recognition using CNN</h3><p class="small">Short description and tech stack: Keras/TensorFlow, CNN pipelines.</p></div>
+  </div>
+  <div id="modal-3" class="modal-back" style="display:none">
+    <div class="modal panel"><button class="modal-close">Close</button><img src="public/assets/project3.jpg" alt=""><h3>XOR with DNN</h3><p class="small">Short description: experimentation with activations and loss functions.</p></div>
+  </div>
+  <div id="modal-4" class="modal-back" style="display:none">
+    <div class="modal panel"><button class="modal-close">Close</button><img src="public/assets/project4.jpg" alt=""><h3>Text-to-Speech (Gradio)</h3><p class="small">Short description: Gradio interface with TTS models.</p></div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
