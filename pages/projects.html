@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Projects — PK DARK</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="container header">
+    <div class="brand"><div class="logo-badge">PK</div><div><div class="site-title">PK DARK'S Portfolio</div><div class="small">Projects</div></div></div>
+    <nav class="nav"><a href="../index.html">Home</a><a href="about_story.html">About</a><a href="skills.html">Skills</a><a href="contact_connect.html">Contact</a></nav>
+  </header>
+
+  <main class="container" style="padding-top:20px">
+    <section>
+      <h2 class="kv">Selected Projects</h2>
+      <p class="small">Click a card to view a quick preview.</p>
+
+      <div class="grid" style="margin-top:12px">
+        <div class="panel card">
+          <img src="../public/assets/project1.jpg" alt="">
+          <div class="card-body">
+            <h3>Personalized Movie Recommender</h3>
+            <p class="small">AI-driven system for personalized movie recommendations (Marketing project).</p>
+            <div style="margin-top:8px"><button class="btn btn-neon" data-open="modal1">Preview</button></div>
+          </div>
+        </div>
+
+        <div class="panel card">
+          <img src="../public/assets/project2.jpg" alt="">
+          <div class="card-body">
+            <h3>Face Recognition using CNN</h3>
+            <p class="small">Convolutional Neural Network for face recognition tasks.</p>
+            <div style="margin-top:8px"><button class="btn btn-neon" data-open="modal2">Preview</button></div>
+          </div>
+        </div>
+
+        <div class="panel card">
+          <img src="../public/assets/project3.jpg" alt="">
+          <div class="card-body">
+            <h3>XOR with DNN</h3>
+            <p class="small">Solving XOR with DNN and activation experiments.</p>
+            <div style="margin-top:8px"><button class="btn btn-neon" data-open="modal3">Preview</button></div>
+          </div>
+        </div>
+
+        <div class="panel card">
+          <img src="../public/assets/project4.jpg" alt="">
+          <div class="card-body">
+            <h3>Text-to-Speech with Gradio</h3>
+            <p class="small">A small TTS demo built in Python with Gradio interface.</p>
+            <div style="margin-top:8px"><button class="btn btn-neon" data-open="modal4">Preview</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="modal1" class="modal-back" style="display:none"><div class="modal"><button class="modal-close">Close</button><img src="../public/assets/project1.jpg"><h3>Personalized Movie Recommender</h3><p class="small">Brief: A recommendation system using collaborative filtering and custom marketing features.</p></div></div>
+    <div id="modal2" class="modal-back" style="display:none"><div class="modal"><button class="modal-close">Close</button><img src="../public/assets/project2.jpg"><h3>Face Recognition using CNN</h3><p class="small">Brief: Face recognition using CNN pipelines and dataset preprocessing.</p></div></div>
+    <div id="modal3" class="modal-back" style="display:none"><div class="modal"><button class="modal-close">Close</button><img src="../public/assets/project3.jpg"><h3>XOR with DNN</h3><p class="small">Brief: Experiments solving the XOR problem with deep networks.</p></div></div>
+    <div id="modal4" class="modal-back" style="display:none"><div class="modal"><button class="modal-close">Close</button><img src="../public/assets/project4.jpg"><h3>Text-to-Speech with Gradio</h3><p class="small">Brief: Gradio demo for TTS with adjustable parameters and download option.</p></div></div>
+
+  </main>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
