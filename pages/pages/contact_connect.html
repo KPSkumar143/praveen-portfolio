@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Contact — PK DARK</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="container header">
+    <div class="brand"><div class="logo-badge">PK</div><div><div class="site-title">PK DARK'S Portfolio</div><div class="small">Contact</div></div></div>
+    <nav class="nav"><a href="../index.html">Home</a><a href="about_story.html">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a></nav>
+  </header>
+
+  <main class="container" style="padding-top:20px">
+    <section class="panel">
+      <h2 class="kv">Contact Me</h2>
+      <p class="small">Email: <a class="kv" href="mailto:praveenkumar11242006@gmail.com">praveenkumar11242006@gmail.com</a> • Phone: <span class="kv">86670 91840</span></p>
+
+      <form id="contactForm" action="https://formspree.io/f/mzzvrpkp" method="POST" style="margin-top:14px">
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <input required name="name" placeholder="Your name" style="flex:1;padding:10px;border-radius:8px;background:var(--panel);border:1px solid rgba(255,255,255,0.02);color:inherit"/>
+          <input required name="email" type="email" placeholder="Your email" style="flex:1;padding:10px;border-radius:8px;background:var(--panel);border:1px solid rgba(255,255,255,0.02);color:inherit"/>
+        </div>
+        <div style="margin-top:8px">
+          <textarea required name="message" placeholder="Your message" style="width:100%;padding:10px;border-radius:8px;background:var(--panel);border:1px solid rgba(255,255,255,0.02);color:inherit"></textarea>
+        </div>
+        <div style="margin-top:10px">
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <span id="msg" style="margin-left:12px" class="small"></span>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    // Simple UI feedback: show message on submit (Formspree will also handle)
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      const msg = document.getElementById('msg');
+      msg.textContent = 'Sending…';
+      // allow normal form submission to Formspree
+      setTimeout(()=>{ msg.textContent = 'If you don’t get a confirmation, check your spam.'; }, 2000);
+    });
+  </script>
+</body>
+</html>
